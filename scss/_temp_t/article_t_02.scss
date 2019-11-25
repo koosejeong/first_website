@@ -1,0 +1,36 @@
+// article_t_02.scss
+
+#article_t_02{ @include conUnit( padding, 30); box-sizing:border-box; width:100%; @include conUnit( max-width, 768); height:auto; @include conUnit( min-height, 400); background: #eee;
+  &>.fullBox{  @include fullBox; overflow:hidden;
+    &>.box_one{ position:relative; float:left; width:50%; height:100%; @include conUnit( min-height, 400); background-image: url('../../img/hongkong/img05.jpeg'); background-size:cover; background-position:50% 50%; background-repeat: no-repeat;
+      &>a{ position:absolute; @include fullBox;
+        &:before{ content:" "; display:block; position:absolute; bottom:0; left:0; width: 100%; height:50%; background-color:rgba(200,200,200,0.5); opacity:1; } 
+        & p{ position:absolute; top:60%; left:5%; transform:trnaslateY(-50%); width:auto; height:auto; @include conUnit(font-size, 24); color:#fff; text-shadow:3px 3px 0 #333; }
+      }
+      &>.action:before{ opacity:0.7; height:100%; }
+      &>.action p{ top:5%; }
+    }
+
+
+    &>.box_two{ float:right; width:50%; height:100%; @include conUnit( min-height, 400);  
+      &>.box_two_01{ position:relative; width:100%; height:50%; @include conUnit( min-height, 200); background-image: url('../../img/newyork/img01.jpeg'); background-size:cover; background-position:50% 50%; background-repeat: no-repeat;
+        &>a{ position:absolute; @include fullBox;
+          &:before{ content:" "; display:block; position:absolute; bottom:0; right:0; width:50%; height:100%; background-color:rgba(200,200,200,0.5); opacity:1; }
+          & p{ position:absolute; left:5%; bottom:5%; width:100%; height:auto; @include conUnit(font-size, 14); color:#fff; text-shadow:3px 3px 0 #333; }
+        }
+        &>.action:before{ opacity:0.7; width:100%; }
+        &>.action p{ text-align:right; @include conUnit(font-size, 16); }
+      }
+
+      &>.box_two_02{ position:relative; width:100%; height:50%; @include conUnit( min-height, 200); background-image: url('../../img/hawai/img02.jpeg'); background-size:cover; background-position:50% 50%; background-repeat: no-repeat; 
+        &>a{ position:absolute; @include fullBox;
+          &:before{ content:" "; display:block; position:absolute; bottom:0; left:0; width:50%; height:100%; background-color:rgba(200,200,200,0.5); opacity:1; }
+          & p{ position:absolute; right:5%; top:5%; width:auto; height:auto; @include conUnit(font-size, 14); color:#fff; text-shadow:3px 3px 0 #333; }
+        }
+        &>.action:before{ opacity:1; width:100%; }
+        &>.action p{ left:5%; @include conUnit(font-size, 16); }
+      }
+    } //box_two 
+  } //fullBox
+} //article_t_02
+

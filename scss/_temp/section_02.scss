@@ -1,0 +1,18 @@
+// section_02.scss
+$i:3;
+#section_02{ position:relative; width:100%; @include conUnit( min-width, 320); height:50vw; 
+  &>.event_area{ padding:12.5vw; box-sizing:border-box; width:100%; height:100%; background-color:#50f; 
+    &>ul{ @include fullBox; background-color:inherit;
+      &>li{ float:left; width:25vw; height:25vw; @include conUnit( padding, 2); box-sizing:border-box; 
+        &>a{ display:block; @include fullBox; border-radius:100%; 
+        &.action{ border:3px solid #fff; } 
+        } //a
+      } //li
+    } //ul
+    
+
+    &>.event_product{ display:block; position:absolute; @include conUnit( right, 10); @include conUnit( bottom, 10); width:auto; height:auto; 
+    &>span{ width:auto; height:auto; background-color:transparent; color:#fff;}
+    } //a
+  } //event_area
+} //section_02

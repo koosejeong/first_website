@@ -1,0 +1,31 @@
+// article_02.scss
+
+#article_02{ position:relative; width:100%; @include conUnit( height, 300);
+  &>.art_02_form_box{ position:absolute; top:0; left:0; margin:auto; width:100%; @include conUnit( min-width, 320); height:100%; background-color: #fff; overflow:hidden;
+    &>span{ position:absolute; top:0; left:5%; margin:auto; width:80%; @include conUnit( height, 47); font-size:32px; color:#fff; }
+    &>ul{ $count:5; 
+      width:100% * $count; height:100%; margin-left:-100%;
+      &>li{ float:left; @include conUnit( padding, 50); box-sizing:border-box; 
+        width:100% / $count; height:100%;
+        &>a{ display:block; width:100%; height:100%; 
+          &>span{ display:block; position:absolute; top:50%; width:auto; height:auto; transform:trnaslateY(50%); /*수직값을 주는 순간 겹치는 이유 무엇?*/ }
+        }
+      &:nth-child(1){ background-image: url('../../img/hongkong/img05.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
+      &:nth-child(2){ background-image: url('../../img/newyork/img05.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
+      &:nth-child(3){ background-image: url('../../img/sanhai/img01.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
+      &:nth-child(4){ background-image: url('../../img/hawai/img02.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
+      } //li
+
+    } //ul 
+    &>.btn_area { position:absolute; top:50%; transform:translateY(-50%); z-index:500; width:100%; height:0;
+      &>.next{ float:right; @include conUnit( width, 50); @include conUnit( height, 50); background-color:transparent;}
+      &>.prev{ float:left; @include conUnit( width, 50); @include conUnit( height, 50); background-color:transparent; }
+        & i{ font-size:30px; color:#fff; text-shadow:3px 3px #333; }
+    }
+    &>.more_btn{ position:absolute; @include conUnit( right, 20); @include conUnit( bottom, 10); @include conUnit( width, 30); @include conUnit( height, 30); background-image: url('../../img/icon/more-01.png'); background-size: cover; background-position:50% 50%; background-repeat: no-repeat; }
+
+    &>.adver_product{ position:absolute; @include conUnit( right, 50); @include conUnit( bottom, 80); width:60%; height:auto; background-color: $gray; } 
+     
+    
+  }  
+}

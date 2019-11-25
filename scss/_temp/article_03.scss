@@ -1,0 +1,25 @@
+// article_03.scss
+
+$count:5;
+#article_03{ position:relative; width:100%; @include conUnit( min-width, 320); height:auto; 
+  &>.full_box{ width:100%; @include conUnit( height, 300); background-size: cover; background-position:50% 50%; background-repeat: no-repeat; overflow:hidden; 
+    &:before{ display:block; content:" "; position:absolute; top:0; left:0; @include fullBox; background-color: #eee; opacity:0.5; }
+    &>.guide_box{ position:absolute; top:0; left:0; width:100%; height:100%; 
+      &>ul{ transform:translateX(-100% / $count); width:100% * $count; height:100%; 
+        &>li{ float:left; width:100% / $count; height:100%;  @include conUnit( padding, 50); box-sizing:border-box;  
+          &>a{ display:block; width:100%; height:100%; background-size: cover; background-position:50% 50%; background-repeat: no-repeat; 
+            &>span{ position:absolute; top:50%; transform:translateY(-50%); width:auto; height:auto; background-color:transparent; color:#fff; }
+          }
+        } //li
+      } //ul
+      
+    } //guide_box
+    &>.btn_area{ position:absolute; top:50%; transform:translateY(-50%); width:100%; height:0; 
+      &>.next{ float:right;  @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; }
+      &>.prev{ float:left; @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; }
+        & i{ @include conUnit( font-size, 30); color:#fff; text-shadow:3px 3px #333; }   
+    } //btn_area
+    &>.more{ position:absolute; @include conUnit(right, 20); @include conUnit(bottom, 10); @include conUnit(width, 30); @include conUnit(height, 30); background-image: url('../../img/icon/more-01.png'); background-size: cover; background-position:50% 50%; background-repeat: no-repeat; }
+  } //full_box
+  
+}

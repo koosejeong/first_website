@@ -1,0 +1,16 @@
+// main_t.scss
+
+@import "_basic/var";
+@import "_basic/mixin_02";
+@import "_basic/etc";
+
+#wrap{ width:100%; height:auto; background-color:#fff; }
+
+@import "./_temp_t/pub_header_t";  
+@import "./_temp_t/section_t_01";
+@import "./_temp_t/article_t_01"; 
+@import "./_temp_t/article_t_02";  
+@import "./_temp_t/section_t_02"; 
+@import "./_temp_t/article_t_03"; 
+@import "./_temp_t/article_t_04"; 
+@import "./_temp_t/pub_footer_t"; 

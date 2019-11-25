@@ -1,0 +1,13 @@
+//pub_footer_pc.scss
+// pub_footer_t.scss
+$count:7;
+#pub_footer_pc{ @include conUnit(margin-top, 100); width:100%; @include conUnit(max-width, 1280); height:auto; background-color: #eee;
+  &>ul{ width:100%; height:auto; opacity:1; 
+    &>li{ float:left; position:relative; @include conUnit(padding, 20); box-sizing:border-box; width:100% / $count; @include conUnit(height,100); background-color: #000033; 
+      &>a{ display:block; @include conUnit(width, 60); @include conUnit(height, 50); transform:translateX(50%); background-color: #fff; @include conUnit(border-radius, 3);  &>i{ display:block; width:100%; height:100%; text-align:center; transform:translateX(50%); }
+        &>span{ display:block; @include conUnit(margin-top, 5); width:auto; height:auto; text-align:center; color:#fff; @include conUnit(font-size, 12); }
+      } //a
+    } //li
+  }//ul
+  &>address{ @include conUnit(padding, 20); box-sizing:border-box; width:100%; @include conUnit(height, 200); @include conUnit(font-size, 24); word-break:keep-all; font-style:normal; }
+} //pub_footer_pc

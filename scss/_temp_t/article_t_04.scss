@@ -1,0 +1,26 @@
+// article_t_04.scss
+
+#article_t_04{ @include conUnit(margin-top, 50); @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:auto; @include conUnit(min-height, 400); background-color: #eee;
+  &>.fullBox{ position:relative; @include fullBox; @include conUnit(min-height, 400); 
+    &>h3{ width:100%; @include conUnit(height, 50); border-bottom:3px solid #000033; 
+      padding: 1rem; box-sizing: border-box; 
+        &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 20); color:#000033; }
+      } //h3
+    &>a{ display:block; position:absolute; top:0; right:0; @include conUnit(width, 50); @include conUnit(height, 50); background-color:#000033; background-image: url('../../img/icon/more-01.png'); background-size:cover; background-position:50% 50%; background-repeat: no-repeat; } 
+    &>ul{ width:100%; height:auto; @include conUnit(padding-top, 32); @include conUnit(margin-top, 32); 
+       &>li{ float:left; position:relative; width:48%; @include conUnit(height, 300);        
+      &:last-child{ float:right;}
+        &>a{ display:block; @include fullBox; 
+            &>.act{ position:absolute; bottom:0; left:0; width:100%; height:20%; @include conUnit(padding, 30); box-sizing:border-box; background-color:rgba(200,200,200,0.5); opacity:0.7; animation:glass 2s ease-in infinite alternate; 
+              @keyframes glass{
+                100%{ height:25%; }
+              } //@keyframes
+              &>p{ color:#fff; @include conUnit(font-size, 30); text-align:center; }
+            }
+          &>span{ display:block; @include conUnit(width, 100); margin-left:5%; @include conUnit(height, 50);transform:translateY(-50%); background-color:#f00; color:#fff; text-shadow: 3px 3px 0 #333; @include conUnit(font-size, 16);  @include conUnit(line-height, 50); text-align: center; }
+        } //a
+      } //li
+    } //ul
+  
+  } //fullBox
+} //article_t_04

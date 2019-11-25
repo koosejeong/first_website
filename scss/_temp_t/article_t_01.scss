@@ -1,0 +1,21 @@
+// article_t_01.scss
+
+$count:3;
+#article_t_01{ position:relative; width:100%; @include conUnit( max-width, 768); height:auto;  
+  &>.main_box{ @include fullBox; 
+    &>ul{ @include conUnit( padding, 50); box-sizing:border-box; width:100%; @include conUnit( height, 350);  
+      &>li{ float:left; position:relative; z-index:5; width:100% / $count; height:80%;
+        &>a{ display:block; @include fullBox; border-radius:100%; border:3px solid #fff;  background-size:cover; background-position:50% 50%; background-repeat:no-repeat; 
+          &>span{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); @include conUnit( font-size, 20); color:#fff; text-shadow:3px 3px 0 #333; }
+        } //a
+      } //li
+    } //ul
+    &>.respone_box{ display:none; position:absolute; top:0; left:0; z-index:1; @include fullBox; background-position:50% 50%; background-size:cover; background-repeat: no-repeat; opacity:0; }
+    &>.respone_box.action{ z-index:3; background-color:rgba(200,200,200,0.5); }
+    &>.more_area{ position:absolute; left:5%; right:5%; bottom:5%; z-index:10; width:90%; height:5%; border-bottom:3px solid #000033; 
+      &>a{ display:block; position:absolute; right:0; bottom:5%; @include conUnit( width, 100); @include conUnit( height, 50); background-color: #000033; 
+        &>span{ display:block; @include fullBox; @include conUnit( font-size,30); color:#fff;text-align:center; }
+      } //a
+    } //more_area
+  } //main_box
+} //article_t_01

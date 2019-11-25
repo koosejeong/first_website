@@ -1,0 +1,16 @@
+// main.scss
+
+@import "_basic/var";
+@import "_basic/mixin_02";
+@import "_basic/etc";
+
+#wrap{ width:100%; height:auto; background-color:#fff;  overflow-y:visible; overflow-x:hidden;}
+
+@import "./_temp/pub_header";  
+@import "./_temp/section_01";
+@import "./_temp/article_01"; 
+@import "./_temp/article_02";  
+@import "./_temp/section_02"; 
+@import "./_temp/article_03"; 
+@import "./_temp/article_04"; 
+@import "./_temp/pub_footer"; 

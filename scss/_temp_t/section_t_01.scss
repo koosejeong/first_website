@@ -1,0 +1,23 @@
+// section_t_01.scss
+$count:5;
+#section_t_01{ position:relative; top:0; left:0; width:100%; @include conUnit(max-width, 768); height:auto; @include conUnit(min-height, 700); 
+ &>.guide_box{ width:100%; height:auto; overflow:hidden;  
+  &>ul{ margin-left:-100%; width:100% * $count; height:auto;  
+    &>li{ position:relative; float:left; width:100% / $count; height:100%; @include conUnit(min-height, 700); outline:1px solid #333; background-size: cover; background-position:50% 50%; background-repeat: no-repeat;
+      &>a{ display:block; position:absolute; top:50%; transform:translateY(-50%); right:10%; width:auto; height:auto; 
+        &>span{ @include conUnit(font-size, 30); color:#fff; text-shadow:3px 3px 0 #333; }
+      }
+    }
+  } //ul
+  &>.btn_area{ position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; height:0; 
+    &>button{ @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; 
+    &:first-child{ float:right; }
+    &:last-child{ float:left; }
+      &>i{ @include fullBox; @include conUnit( font-size, 50); color:#fff; text-shadow:3px 3px 0 #333; }
+    } //button   
+  } //btn_area
+    &>a{ display:block; position:absolute; top:80%; left:10%; width:auto; height:auto; 
+      &>span{ @include conUnit( font-size, 36); color:#fff; text-shadow:3px 3px 0 #333; }
+    } //a
+  } //guide_box  
+} //section_t_01

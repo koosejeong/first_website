@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+$c:6;
+#pub_header_t{ position:fixed; top:0; left:0; z-index:1000; @include conUnit( padding, 20); box-sizing:border-box; width:100%; height:auto; @include conUnit( min-width, 481); @include conUnit( max-width, 768); background-color:rgba(0,0,0,0.3);  border-bottom:3px solid #000033; clear:both;
+  &>h1{ float:left; margin-right:3%; width:20%; height:auto; @include conUnit( min-height, 50); background-image: url('../../img/icon/logo.png'); background-size:contain; background-position:50% 50%; background-repeat: no-repeat; }
+  &>#form_area{ float:left; margin-right:3%; width:30%; height:100%; background-color: #fff; 
+    &>form{ @include fullBox;
+        & #text-area{ float:left; width:70%; height:100%; @include conUnit( min-height, 50); background-color: #ccc; }
+        & .search-btn{ float:right; width:30%; height:100%; @include conUnit( min-height, 50); background-color:#000033; 
+          &>i{ @include fullBox; @include conUnit(font-size, 20); color:#fff; text-align:center; }
+        } 
+    } //form
+  } //form_area
+  &>#menu_area{ float:left; width:30%; height:auto;  
+    &>ul{ @include fullBox; 
+      &>li{ float:left; width:30%; height:100%; margin-right:5%; 
+        &>a{ display:block; @include conUnit(width, 50); @include conUnit(height, 50); color:#000033; @include conUnit(font-size, 12); text-align:center;
+          &>i{ width:auto; @include conUnit(height, 20);  @include conUnit(font-size, 30); margin-left:5%; color:#000033; }
+        }
+      &:last-child{ margin-right:0; }
+      } //li
+    } //ul
+  } //menu_area
+  &>#btn_area{ float:right; @include conUnit(padding, 20); box-sizing:border-box; margin-right:5%; width:5%; height:auto;  
+    &>button{ @include fullBox; background-color:transparent;
+      &>i{ width:auto; height:auto; @include conUnit(font-size, 40); background-color:#000033; transform:translateY(-50%); }
+    }
+    &>.anothe_area{ display:none; position:absolute; top:0; left:0; z-index:1000; width:100%; @include conUnit( max-width, 768); height:auto; @include conUnit( min-height, 400); background-color:#fff;
+      &>ul{ width:100%; height:auto; 
+        &>li{ @include conUnit(padding, 20); box-sizing:border-box; @include fullBox; 
+          &>dl{ float:left; width:100% / $c; height:auto;
+            &>dt{ width:100%; height:20%; border-bottom:3px solid #000033;  
+              &>a{ display:block;  @include conUnit( font-size, 20); color:#000033; text-align:center; }
+            }
+            &>dd{ @include conUnit(margin-top, 30); width:100%; height:auto; 
+              & a{ display:block; @include conUnit( font-size, 16); color:#000033; }
+            }
+          } //dl
+        }
+      } //ul
+      &>button{ position:absolute; @include conUnit(bottom, 0); @include conUnit(right, 10); @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; 
+        &>i{ @include conUnit(font-size, 50); margin-bottom:0; @include conUnit(margin-right, 100); color:#000033; }
+      }
+    } //anothe_area
+  } //btn_area
+}

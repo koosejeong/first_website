@@ -1,0 +1,38 @@
+// pub_footer.scss
+
+$c:3;
+$c2:4;
+#pub_footer{ width:100%; @include conUnit( min-width, 320); height:auto; background-color: #fff;
+  &>.icon_area{ @include conUnit( padding, 10); box-sizing:border-box; width:100%; @include conUnit( height, 150); border:1px solid #333; 
+    &>ul:first-child{ width:100%; height:50%; @include conUnit( padding, 5); box-sizing:border-box;
+      &>li{ position:relative; float:left; width:20%; height:100%; margin-right:10%;
+        &>a{ display:block; @include fullBox; color:#333; @include conUnit(font-size, 14); text-align: center; font-weight:bold;
+          &>div{ @include fullBox; background-color:#fff; 
+          &.icon_01{  background-image: url('../../img/icon/passport-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }  
+          &.icon_02{ background-image: url('../../img/icon/visa-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }  
+          &.icon_03{ background-image: url('../../img/icon/back-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }  
+            &>span{ display:block; position:absolute; left:50%; transform:translateX(-50%); bottom:0; width:200%; height:auto; text-align: center;}
+          } //div
+        } //a
+      &:first-child{ margin-left:10%; }
+      } //li
+    } //ul
+    &>ul:last-child{ width:100%; height:50%; @include conUnit( padding, 5); box-sizing:border-box; 
+      &>li{ position:relative; float:left; width:20%; height:100%; margin:auto; margin-right:4%;  
+        &>a{ display:block; @include fullBox;  color:#333; @include conUnit(font-size, 14); text-align: center; font-weight:bold; 
+          &>div{ @include fullBox; 
+          &.icon_04{ margin-left:4%; background-image: url('../../img/icon/taxfree-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }  
+          &.icon_05{ background-image: url('../../img/icon/notice-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+          &.icon_06{ background-image: url('../../img/icon/insurance-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+          &.icon_07{ background-image: url('../../img/icon/JRpass-01.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+            &>span{ display:block; position:absolute; bottom:0; width:100%; height:auto; text-align:cneter; }
+          } //div
+        } //a
+      &:first-child{ margin-left:4%; }
+      } //li
+    } //ul
+  }
+  &>address{ @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:auto; font-style:normal;  
+    &>span{ display:block; width:80%; height:auto; @include conUnit( font-size, 14); word-break:break-all; }
+  }
+}

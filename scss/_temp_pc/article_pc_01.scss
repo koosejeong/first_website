@@ -1,0 +1,21 @@
+// article_pc_01.scss
+$c:3;
+#article_pc_01{ position:relative; width:100%; height:auto; @include conUnit(max-width, 1280);
+  &>.fullBox{ @include conUnit(padding, 100); box-sizing:border-box; width:100%; @include conUnit(height, 500); 
+    &>ul{ @include fullBox; 
+      &>li{ float:left; position:relative; z-index:5; margin:auto; width:29%; height:100%; border-radius:100%; 
+        &>a{ display:block; width:100%; height:100%; border-radius:100%; 
+          &>span{ display:block; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:auto; height:auto; @include conUnit(font-size, 30); color:#fff; text-shadow:3px 3px 1px #333; text-align:center; white-space: nowrap; word-break: keep-all; }
+        } //a
+        &:first-child{ margin-left:5%; margin-right:0; }
+        &:last-child{ margin-right:5%; margin-left:0; }
+        &.action{ border:5px solid #fff; };
+      } //li  
+    } //ul
+    &>.respon_box{ display:none; position:absolute; top:0; left:0; z-index:1; @include fullBox; background-position:50% 50%; background-size:cover; background-repeat: no-repeat; opacity:0; }
+    &>.respon_box.action{ z-index:3; background-color:rgba(200,200,200,0.5); }
+    &>p{ position:absolute; left:10%; right:10%; bottom:5%; z-index:10; width:80%; @include conUnit(height, 47); border-bottom:3px solid #000033; 
+      &>a{ display:block; position:absolute; right:0; bottom:5%; @include conUnit(width, 100); @include conUnit(height, 50); background-color:#000033; color:#fff; font-style:bold; text-align:center; @include conUnit(font-size, 24); @include conUnit(line-height, 50); }
+    } //p
+  } //fullBox
+} //article_pc_01

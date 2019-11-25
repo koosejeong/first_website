@@ -1,0 +1,11 @@
+// section_pc_02.scss
+
+#section_pc_02{ @include conUnit(margin-top, 100);  width:100%; @include conUnit(max-width, 1280); @include conUnit(height, 400); background-color:#000033;
+  &>.img_box{ position:relative; @include fullBox; background-image: url('../../img/london/img02.jpeg'); background-position:0 100%; background-size:cover; background-repeat: no-repeat; 
+    &>p{ position: absolute; top:10%; right:20%; width:auto; height:auto; @include conUnit(font-size, 40); color:#000033; text-shadow:2px 2px 0 #fff; }
+    &>p:nth-of-type(2){ top:20%; right:5%; }
+    &>.eve_area{ position: absolute; bottom:0; transform:translateY(50%); left:10%; @include conUnit(width, 200); @include conUnit(height, 80); background-color:#000033; 
+      &>a{ display:block; width:auto; height:auto; @include conUnit(font-size, 24); color:#fff; text-align:center; @include conUnit(line-height, 80); }
+    }
+  }
+}

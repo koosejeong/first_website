@@ -1,0 +1,27 @@
+// article_pc_03.scss
+#article_pc_03{ @include conUnit(margin-top, 100); width:100%; @include conUnit(max-width, 1280); height:auto; background-color: #eee;
+  &>.fullBox{ position:relative; @include fullBox; @include conUnit(min-height, 800); opacity:1;
+    &>p{ margin:auto; width:90%; @include conUnit(height, 97); border-bottom:3px solid #000033; 
+      &>a{ display:block; position:absolute; top:5%; right:5%; @include conUnit(width, 100); @include conUnit(height, 50); background-color:#000033; 
+        &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 30); text-align:center; @include conUnit(line-height, 50); color:#fff; }
+      } //a
+    } //p
+    &>ul:first-of-type{ @include conUnit(padding, 50); box-sizing:border-box; width:100%; height:50%; @include conUnit(min-height, 300); 
+      &>li{ float:left; margin-right:5%; @include conUnit(padding, 20); box-sizing:border-box; width:30%; height:100%; @include conUnit(min-height, 300); background-color: #fff; 
+        &:last-child{ margin-right:0; }
+          &>a{ display:block; width:100%; @include conUnit(height, 300);   
+          &.action{ border:3px solid $sample; }
+        }
+      } //li
+    } //ul
+    &>ul:last-of-type{ @include conUnit(padding, 50); box-sizing:border-box; width:100%; height:50%; @include conUnit(min-height, 300);  
+      &>li{ float:left; margin-right:5%; @include conUnit(padding, 20); box-sizing:border-box; width:30%; height:100%; @include conUnit(min-height, 300); background-color: #fff; 
+        &:last-child{ margin-right:0; }
+          &>a{ display:block; width:100%; @include conUnit(height, 300); }
+      } //li
+    } //ul
+    &.action{ display:block; background-color:rgba(200,200,200,0.5); 
+      & .txt_area{ display:none; position:absolute; top:55%; left:50%; transform:translate(-50%, -70%); width:auto; height:auto; @include conUnit(font-size, 36); color:#fff; text-shadow:5px 5px 5px #333; }
+    }
+  } //fullBox
+}
