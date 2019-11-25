@@ -1,7 +1,7 @@
 // article_pc_01.js
 (function($){
   // data 불러오기--------------------
-    let url = '../data/country.json';
+    let url = './data/country.json';
     let rel = null;
     $.ajax({
       async:false,
