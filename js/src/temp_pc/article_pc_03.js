@@ -32,10 +32,10 @@
   let txtT = [ '동방의 진주, 러시아 모스크바', '축구가 다가 아니야! 브라질', '호수도, 도시도 모두 아름다워 캐나다!' ];
 
   for(let i=0; i<firstLi.length; i++){
-    let imgUrl = `../img/${folder[i].country}/`;
+    let imgUrl = `./img/${folder[i].country}/`;
     firstLi.eq(i).children(firstLink).css({'backgroundImage':`url(${imgUrl + img[i]}.jpeg)`, 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat', 'backgroundPosition':'50% 50%'});
     for(let j=0; j<secoundLi.length; j++){
-      let twoUrl = `../img/${folderT[j].country}/`;
+      let twoUrl = `./img/${folderT[j].country}/`;
       //console.log(twoUrl);
       secoundLi.eq(j).children(secoundLink).css({'backgroundImage':`url(${twoUrl + imgT[j]}.jpeg)`, 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat', 'backgroundPosition':'50% 50%' });
     }  
@@ -50,7 +50,7 @@
     secoundLi.find(txtArea).css({'display':'none'});
     $(this).parent(firstLi).find(txtArea).css({'display':'block'});
     $(this).parent(firstLi).siblings().find(txtArea).css({'display':'none'});
-    let imgUrl = `../img/${folder[myIndex].country}/`;
+    let imgUrl = `./img/${folder[myIndex].country}/`;
     fullBox.css({'backgroundImage':`url(${ imgUrl+img[myIndex]}.jpeg)`,'backgroundSize':'cover', 'backgroundRepeat':'no-repeat', 'backgroundPosition':'50% 50%' }).addClass('action');
   });
   secoundLink.on('click focus mouseenter', function(e){
@@ -62,7 +62,7 @@
     firstLi.find(txtArea).css({'display':'none'});
     $(this).parent(secoundLi).find(txtArea).css({'display':'block'});
     $(this).parent(secoundLi).siblings().find(txtArea).css({'display':'none'});
-    let imgUrl = `../img/${folderT[myIndex].country}/`;
+    let imgUrl = `./img/${folderT[myIndex].country}/`;
     fullBox.css({'backgroundImage':`url(${ imgUrl+imgT[myIndex]}.jpeg)`,'backgroundSize':'cover', 'backgroundRepeat':'no-repeat', 'backgroundPosition':'50% 50%' }).addClass('action');
   });
 

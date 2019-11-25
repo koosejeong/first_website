@@ -33,11 +33,11 @@
   for(let i=0; i<5; i++){
     //let imgUrl = `../img/${folder[i].country}/`;
     //console.log(imgUrl+img[i]);
-    zeroLi.children('a').css({'backgroundImage':'url(../img/'+rel[19].country+'/'+'img02.jpg)', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
+    zeroLi.children('a').css({'backgroundImage':'url(./img/'+rel[19].country+'/'+'img02.jpg)', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
     for(let j=0; j<2; j++){
-      oneLi.eq(j).children('a').css({'backgroundImage':'url(../img/'+folder[j].country+'/'+img[j]+')', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
+      oneLi.eq(j).children('a').css({'backgroundImage':'url(./img/'+folder[j].country+'/'+img[j]+')', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
       for(let e=0; e<2; e++){
-        twoLi.eq(e).children('a').css({'backgroundImage':'url(../img/'+folderT[e].country+'/'+imgT[e]+')', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
+        twoLi.eq(e).children('a').css({'backgroundImage':'url(./img/'+folderT[e].country+'/'+imgT[e]+')', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
       }
     }
   }

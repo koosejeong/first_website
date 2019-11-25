@@ -22,7 +22,7 @@
   let img = 'img01.jpg';
   for(let i=0; i<focusLi.length; i++){
     let url = folder[i].country;
-    let imgUrl = `../img/${url}/`;
+    let imgUrl = `./img/${url}/`;
     console.log(imgUrl);
     focusLi.eq(i).children(focusLink).css({'backgroundImage':`url(${imgUrl+img})`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'noRepeat'});
   }

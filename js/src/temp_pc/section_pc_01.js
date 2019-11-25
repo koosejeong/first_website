@@ -28,7 +28,7 @@
 
   for(let i=0; i<len; i++){
     let country = folder[i].country;
-    let imgUrl = `../img/${country}/`
+    let imgUrl = `./img/${country}/`
     console.log(imgUrl);
     slideLi.eq(i).css({'backgroundImage':`url(${imgUrl + img[i]}.jpeg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'noRepeat'});
   }
