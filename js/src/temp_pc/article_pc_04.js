@@ -31,7 +31,7 @@
   let imgT = [ 'img03.jpeg', 'img01.jpg' ];
 
   for(let i=0; i<5; i++){
-    //let imgUrl = `../img/${folder[i].country}/`;
+    //let imgUrl = `./img/${folder[i].country}/`;
     //console.log(imgUrl+img[i]);
     zeroLi.children('a').css({'backgroundImage':'url(./img/'+rel[19].country+'/'+'img02.jpg)', 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
     for(let j=0; j<2; j++){

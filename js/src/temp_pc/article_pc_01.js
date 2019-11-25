@@ -31,7 +31,7 @@
     $(this).parent('li').addClass('action');
     $(this).parent('li').siblings().removeClass('action');
     let thisi = $(this).parent('li').index();
-    let imgUrl = `../img/${folder[thisi].country}/`;
+    let imgUrl = `./img/${folder[thisi].country}/`;
     rsBox.css({'display':'block', 'backgroundImage':`url(${imgUrl + img})`, 'opacity':'0.7', 'backgroundColor':'rgba(200,200,200,0.5)'});
     rsBox.addClass('action');
   });
