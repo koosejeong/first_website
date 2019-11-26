@@ -35,10 +35,11 @@
   slideLi.eq(-1).clone(true).prependTo(slideUl);
   len++;
 
-  const moveSlide = function(n){
-    slideUl.animate({'marginLeft':(-100 * n) + '%'});
+  const moveSlide = function(){
+    //slideUl.animate({'marginLeft':(-100 * n) + '%'});
+    $('.next').trigger('click');
   }
-  moveSlide(0);
+  //moveSlide(0);
 
   slideLi.on('click', function(e){
     e.preventDefault();
@@ -49,10 +50,11 @@
 
   const goSlide = function(){
     go = setInterval(function(){
-      myN++;
-      if(myN >= len-1){
-        myN = 0;
-      } moveSlide(myN);
+      // myN++;
+      // if(myN >= len-1){
+      //   myN = 0;
+      // } moveSlide(myN);
+      moveSlide();
     }, timed * 5);
   }
 

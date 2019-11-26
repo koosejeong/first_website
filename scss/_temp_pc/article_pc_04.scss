@@ -47,7 +47,7 @@
       &>.tap05_area{ float:left; width:20%; height:100%; background-image: url('../../img/bangkok/img01.jpg'); background-position:50% 50%; background-size:cover; background-repeat: no-repeat;
         &>a{ display:block; position:absolute; bottom:5%; transform:translateX(50%); @include conUnit(width, 100); @include conUnit(height, 50); background-color: #000033; }
       } //div-5
-    & span{ width:auto; height:auto; @include conUnit(font-size, 20); text-align:center; @include conUnit(line-height, 50); color:#fff; }
+    & span{ display:block; width:auto; height:auto; @include conUnit(font-size, 20); text-align:center; @include conUnit(line-height, 50); color:#fff; }
     } //con_area
   } //fullBox
 }
