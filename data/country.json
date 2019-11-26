@@ -8,7 +8,7 @@
   { "country":"newyork", "order":[ "img02.jpeg", "img02.jpeg", "img03.jpeg", "img04.jpeg", "img05.jpeg"] },
   { "country":"pari", "order":[ "img01.jpeg", "img02.jpeg", "img03.jpeg", "img04.jpeg", "img05.jpeg", "img06.jpeg", "img07.jpeg", "img08.jpeg" ]},
   { "country":"prague", "order":[ "img01.jpeg", "img02.jpeg", "img03.jpeg", "img04.jpeg", "img05.jpeg", "img06.jpeg", "img07.jpeg", "img08.jpeg", "img09.jpeg"]},
-  { "country":"venrzia", "order":[ "img02.jpeg", "img02.jpeg", "img03.jpeg", "img04.jpeg", "img05.jpeg", "img06.jpeg"] },
+  { "country":"venrzia", "order":[ "img01.jpeg", "img02.jpeg", "img03.jpeg", "img04.jpeg", "img05.jpeg", "img06.jpeg"] },
   { "country":"bangkok", "order":["img01.jpeg"] },
   { "country":"brazilia", "order":["img01.jpeg"] },
   { "country":"canada", "order":["img01.jpeg"] },
