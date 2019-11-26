@@ -204,12 +204,14 @@
     #section_pc_01 > .guideBox > ul {
       width: 500%;
       height: auto;
-      margin-left: -100%; }
+      left: -100%;
+      position: relative; }
       #section_pc_01 > .guideBox > ul > li {
         float: left;
         position: relative;
         width: 20%;
-        height: 900px; }
+        height: 900px;
+        height: 56.25rem; }
         #section_pc_01 > .guideBox > ul > li > a {
           display: block;
           position: absolute;
@@ -967,6 +969,7 @@
           height: 3.125rem;
           background-color: #000033; }
       #article_pc_04 > .fullBox > .con_area span {
+        display: block;
         width: auto;
         height: auto;
         font-size: 20px;
@@ -982,8 +985,7 @@
   width: 100%;
   max-width: 1280px;
   max-width: 80rem;
-  height: auto;
-  background-color: #eee; }
+  height: auto; }
   #pub_footer_pc > ul {
     width: 100%;
     height: auto;
@@ -1005,15 +1007,14 @@
         height: 50px;
         height: 3.125rem;
         transform: translateX(50%);
-        background-color: #fff;
         border-radius: 3px;
-        border-radius: 0.1875rem; }
+        border-radius: 0.1875rem;
+        background-color: #fff; }
         #pub_footer_pc > ul > li > a > i {
           display: block;
           width: 100%;
           height: 100%;
-          text-align: center;
-          transform: translateX(50%); }
+          text-align: center; }
         #pub_footer_pc > ul > li > a > span {
           display: block;
           margin-top: 5px;
