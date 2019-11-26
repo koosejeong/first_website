@@ -71,7 +71,7 @@
    let folder = [ rel[14], rel[17], rel[13] ];
    let txt = [ '떠나고 싶은 곳, 마닐라', '가고 싶은 곳, 발리', '요즘 대세, 코타키나발루' ];
    for(let i=0; i<showLi.length; i++){
-     let url = `../img/${folder[i].country}/`;
+     let url = `./img/${folder[i].country}/`;
     showLi.eq(i).children('a').css({'backgroundImage':`url(${url}img01.jpg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
    }
    showLi.on('mouseenter', function(e){
