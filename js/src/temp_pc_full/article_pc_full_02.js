@@ -104,7 +104,7 @@ $('#article_pc_full_02').find('li').on('click', function(e){
   const goSlode = function(){
     go = setInterval(function(){
       moveSlide();
-    }, timed * 5);
+    }, timed * 10);
   }
   const otherGoSlide = function(j){
     go = setInterval(function(j){

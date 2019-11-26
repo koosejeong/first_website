@@ -395,11 +395,16 @@
             left: 50%;
             bottom: 5%;
             transform: translateX(-50%);
-            width: auto;
-            height: auto;
+            width: 200px;
+            width: 12.5rem;
+            width: 200px;
+            width: 12.5rem;
+            height: 100px;
+            height: 6.25rem;
             font-size: 30px;
             font-size: 1.875rem;
-            color: #333;
+            background-color: #000033;
+            color: #fff;
             text-transform: capitalize;
             text-align: center; }
         #article_pc_full_02 > .fullBox > div > .guide_box > .btn_area {
