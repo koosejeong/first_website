@@ -13,6 +13,7 @@
   <script src="./IE/PIE/PIE.js"></script>
   <sctipy src="./IE/respond/Respond-1.4.2/dest/respond.min.js"></script>
 <![endif]-->
+ <link rel="stylesheet" href="./fonts/fontawesome/css/all.css">
  <link rel="stylesheet" href="./css/base/reset.css">
  <link rel="stylesheet" href="./css/base/common.css">
   <link rel="apple-touch-icon" href="../img/favicon.png">
@@ -40,10 +41,11 @@
       }else if( ww > 480 && ww <= 768 ) {
         $('#wrap').load('./content_t.html');
         //window.location = "./content_t.html";
-      }else if( ww > 768 && ww <= 1280 ){
+      }else if( ww > 768 && ww <= 1366 ){
         $('#wrap').load('./content_pc.html');
         //window.location = "./content_pc.html";
-      }else if( ww > 1280 && ww <= 1920 ){
+      }else {
+        $('#wrap').load('./content_pc_full.html');
         //window.location = "./content_full.html";
       } 
     };

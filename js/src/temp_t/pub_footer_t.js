@@ -6,7 +6,7 @@
   const iconLink = iconLi.children('a');
   const iconBox = iconLink.children('i');
 
-  let url = `../img/icon/`;
+  let url = `./img/icon/`;
   let icon = [ 'passport-01', 'visa-01', 'back-01', 'taxfree-01', 'notice-01', 'insurance-01', 'JRpass-01' ];
 
   for(let i=0; i<iconLi.length; i++ ){
