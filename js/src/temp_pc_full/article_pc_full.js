@@ -77,7 +77,7 @@
    showLi.on('mouseenter', function(e){
      e.preventDefault();
      let myThis = $(this).index();
-     let url = `../img/${folder[myThis].country}/`;
+     let url = `./img/${folder[myThis].country}/`;
      rsBox.css({'display':'block'});
      fullBox.css({'backgroundImage':`url(${url}img01.jpg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
 
