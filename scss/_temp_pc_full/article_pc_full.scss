@@ -1,0 +1,26 @@
+// atcicle_pc_full.scss
+$c:3;
+#article_pc_full{ width:100%; @include conUnit(height, 1000); 
+  &>.fullBox{ position:relative; @include fullBox; background-image: url('../../img/etc/airplan.jpg'); background-position:50% 50%; background-size:cover; background-repeat: no-repeat;
+    &>ul{ @include conUnit(padding, 50); box-sizing:border-box; margin-left:-100%; width:50%; height:100%; background-color:transparent; transition:all 500ms ease;       
+      &>li{ width:100%; height:100% / $c; transform:translateX(-50vw); border-top:3px solid #fff;
+        &>a{ display:block; width:100%; height:100%;
+          &>span{ display:block; margin-left:5%; width:auto; height:auto; @include conUnit(font-size, 60); color:#fff; text-shadow:3px 3px 0 #333; }
+        } //a
+      } //li
+    } //ul
+    // ------------
+    &.action > ul{margin-left: 0;}
+    &.action > ul li{transform:translateX(0);}
+    &.action > ul li:nth-child(1){transition:all 500ms ease 300ms;}
+    &.action > ul li:nth-child(2){transition:all 500ms ease 600ms;}
+    &.action > ul li:nth-child(3){transition:all 500ms ease 900ms;}
+
+    &>span{ display:block; position:absolute; top:50%; transform:translateY(-50%); right:5%; width:auto; height:auto; @include conUnit(font-size, 70); color:#fff; text-shadow: 3px 3px 0 #333; }
+    &>p{ position: absolute; bottom:5%; width:100%; @include conUnit(height, 100);  
+      &>a{ display:block; float:right; width:auto; @include conUnit(height, 100); background-color:#000033; 
+        &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 36); @include conUnit(line-height, 100);   color:#fff; }
+      }
+    }
+  } //fullBox
+}

@@ -1,0 +1,21 @@
+// section_pc_full.scss
+// section_pc_01.scss
+$count:5;
+#section_pc_full{ position:relative; width:100%; @include conUnit(height, 1000); 
+  &>.guideBox{ width:100%; height:100%; overflow:hidden;
+    &>ul{ width:100% * $count; height:auto; left:-100%; position: relative;
+      &>li{ float:left; position:relative; width:100% / $count; @include conUnit(height, 1000);  
+        &>a{ display:block; position:absolute; right:10%; top:50%; transform:translateY(-50%); width:auto; height:auto; 
+          &>span{ @include conUnit(font-size, 50); text-align:center; color:#fff; text-shadow:3px 3px 0 #333; }
+        } //a
+      } //li
+    } //ul
+    &>.btn_area{ position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); width:100%; height:0; 
+      &>button{ float:right; @include conUnit(width, 100); @include conUnit(height, 100); background-color:transparent; 
+        &>i{ @include conUnit(font-size, 100); text-shadow:3px 3px 0 #333; }
+      }
+      &>.prev{ float:left; }
+    } //btn_area
+    &>span{ display:block; position:absolute; bottom:10%; left:10%; width:auto; height:auto; @include conUnit(font-size, 80); color:#fff; text-shadow:3px 3px 0 #333; }
+  } //guideBox
+} //section_pc_01

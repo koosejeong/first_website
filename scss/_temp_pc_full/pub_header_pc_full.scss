@@ -1,0 +1,47 @@
+// pub_haeder_pc_full.scss
+$c:3;
+$count:6;
+#pub_header_pc_full{ position:fixed; top:0; left:0; z-index:1000; @include conUnit(padding, 30); box-sizing:border-box; width:100%; height:auto; background-color:rgba(50,50,100,0.5);
+  &>h1{ float:left; margin-right:5%; width:15%; @include conUnit(height, 100); background-color:#eee; }
+  &>.form_area{ float:left; margin-right:5%; width:30%; @include conUnit(height, 100); 
+    &>form{ @include fullBox; @include conUnit(padding, 20); box-sizing:border-box;
+      & input[type="text"]{ float:left; width:80%; @include conUnit(height, 70); background-color:transparent; border:0; border-bottom:5px solid #000033; }
+      & button[type="button"]{ float:right; width:20%; @include conUnit(height, 70);  background-color: #000033; 
+        &>i{ display:block; width:auto; height:auto; @include conUnit(font-size, 50); color:#fff; }
+      } //button
+    } //form
+  } //form_area
+  &>.gnb{ float:left; margin-right:5%; width:30%; @include conUnit(height, 100); 
+    &>.nav_area{ @include fullBox; 
+      &>ul{ @include fullBox; @include conUnit(padding, 20); box-sizing:border-box; 
+        &>li{ float:left; width:100% / $c; height:100%; 
+          &>a{ display:block; width:auto; @include conUnit(height, 70); color:#000033; @include conUnit(font-size, 24); text-align:center; white-space: nowrap; word-break: keep-all;
+            &>i{ display:block; width:100%; @include conUnit(height, 50);  @include conUnit(font-size, 50); color:#000033; text-align:center; }
+          } //a 
+        } //li
+      } //ul
+    } //nav_area
+  } //gnb
+  &>.samseon_btn{ float:right; margin-right:5%; width:5%; @include conUnit(height, 80);  
+      &>button{ @include fullBox; background-color:#000033; 
+        &>i{ display:block; width:auto; height:auto; @include conUnit(font-size, 60); color:#fff; }
+      } //button
+    &>.anothe_area{ display:none; position:absolute; top:0; left:0; z-index:1000; width:100%; @include conUnit(height, 800); background-color:#fff;
+      &>ul{ width:100%; height:auto; 
+        &>li{ @include conUnit(padding, 50); box-sizing:border-box; @include fullBox; 
+          &>dl{ float:left; width:100% / $count; height:auto;
+            &>dt{ width:100%; height:20%; border-bottom:3px solid #000033;  
+              &>a{ display:block;  @include conUnit( font-size, 36); color:#000033; text-align:center; }
+            } //dt
+            &>dd{ @include conUnit(margin-top, 30); width:100%; height:auto; 
+              & a{ display:block; @include conUnit( font-size, 30); color:#000033; }
+            } //dd
+          } //dl
+        } //li
+      } //ul
+      &>.close_btn{ position:absolute; @include conUnit(bottom, 0); @include conUnit(right, 10); @include conUnit(width, 70); @include conUnit(height, 70); background-color:transparent; 
+        &>i{ @include conUnit(font-size, 50); margin-bottom:0; @include conUnit(margin-right, 100); color:#000033; }
+      } //button
+    } //anothe_area
+  } //samseon_btn
+} //pub_header_pc_full

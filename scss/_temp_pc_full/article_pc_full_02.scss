@@ -1,0 +1,31 @@
+// article_pc_full_02.scss
+$c:5;
+#article_pc_full_02{ width:100%; @include conUnit(height, 1000); @include conUnit(margin-top, 200); 
+  &>.fullBox{ position:relative; @include conUnit(padding, 50); box-sizing:border-box; width:100%; height:100%;
+    &>div{ float:left; margin-right:5%; width:30%; height:80%; background-color: #fff; 
+      &:last-of-type{margin-right: 0;}
+      &>.guide_box{ position:relative; @include fullBox; overflow:hidden; box-shadow:3px 3px 3px #333;
+        &>ul{ position:absolute; width:100% * $c; height:80%; left:-100%;
+          &>li{ float:left; width:100% / $c; height:100%; 
+            &>a{ display:block; width:100%; height:100%; 
+              &>span{ display:block; @include fullBox; transform:translateY(80%); @include conUnit(font-size, 24); color:#fff; text-shadow:3px 3px 0 #333; text-align:center; } //span
+            } //a
+          } //li
+        }// ul
+        &>a{ display:block; position:absolute; bottom:5%; @include fullBox; 
+          &>span{ display:block; position:absolute; left:50%; bottom:5%; transform:translateX(-50%); width:auto; height:auto; @include conUnit(font-size, 30); color:#333; text-transform:capitalize; text-align:center; }
+          } //a
+        &>.btn_area{ display:none; position:absolute; top:40%; width:100%; height:0; 
+        &>.next{ float:right; @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; }
+        &>.prev{ float:left; @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; }
+        & i{ display:block; width:auto; height:auto; @include conUnit(font-size, 50); color:#fff; text-shadow:3px 3px 0 #333; }
+        } //btn_area  
+      } //guide_box
+    } //artArea 
+  &>p{ position: absolute; bottom:5%; width:100%; @include conUnit(height, 100);  
+    &>a{ display:block; float:right; @include conUnit(margin-right, 50); width:auto; @include conUnit(height, 100); background-color:#000033; cursor: pointer;
+        &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 36); color:#fff; @include conUnit(line-height, 100); }
+      } //a
+    } //p  
+  } //fullBox
+}
