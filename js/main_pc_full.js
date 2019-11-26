@@ -40,7 +40,7 @@
   });
 
   // footer area=======================
-  wrap.append('<footer id="pub_footer_pc_full" class="clearfix"></footer>');
+  wrap.append('<footer id="pub_footer_pc_full" class="clearfix scroll"></footer>');
 
   const pubFootPcFull = $('#pub_footer_pc_full');
   pubFootPcFull.load('./html/temp_pc_full/pub_footer_pc_full.html', () => {
