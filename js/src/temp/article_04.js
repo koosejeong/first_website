@@ -3,7 +3,7 @@
 (function(){
 
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -33,7 +33,7 @@
   let img = [ 'img02.jpg', 'img09.jpeg', 'img01.jpg', 'img03.jpeg'];
 
   for(let i=0; i < art04LiLen; i++){
-    let imgUrl = `../../img/${country[i].country}/`;
+    let imgUrl = `./img/${country[i].country}/`;
     //console.log(imgUrl);
     art04Li.eq(i).css({'backgroundImage':`url(${imgUrl + img[i]})`, 'backgroundPosition':'50% 50%', 'backgroundSize':'cover', 'backgroundRepeat':'no-repeat'});
   }

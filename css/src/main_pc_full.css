@@ -9,59 +9,59 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 30px;
-  padding: 1.875rem;
+  padding: 10px;
+  padding: 0.625rem;
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background-color: rgba(50, 50, 100, 0.5); }
+  background-color: rgba(25, 25, 70, 0.8); }
   #pub_header_pc_full > h1 {
     float: left;
     margin-right: 5%;
     width: 15%;
-    height: 100px;
-    height: 6.25rem;
+    height: 50px;
+    height: 3.125rem;
     background-color: #eee; }
   #pub_header_pc_full > .form_area {
     float: left;
     margin-right: 5%;
     width: 30%;
-    height: 100px;
-    height: 6.25rem; }
+    height: 80px;
+    height: 5rem; }
     #pub_header_pc_full > .form_area > form {
       width: 100%;
       height: 100%;
       margin: auto;
-      padding: 20px;
-      padding: 1.25rem;
-      box-sizing: border-box; }
+      padding: 10px;
+      padding: 0.625rem;
+      box-sizing: border-box;
+      border-bottom: 5px solid #99befd; }
       #pub_header_pc_full > .form_area > form input[type="text"] {
         float: left;
         width: 80%;
         height: 70px;
         height: 4.375rem;
         background-color: transparent;
-        border: 0;
-        border-bottom: 5px solid #000033; }
+        border: 0; }
       #pub_header_pc_full > .form_area > form button[type="button"] {
         float: right;
         width: 20%;
         height: 70px;
         height: 4.375rem;
-        background-color: #000033; }
+        background-color: transparent; }
         #pub_header_pc_full > .form_area > form button[type="button"] > i {
           display: block;
           width: auto;
           height: auto;
-          font-size: 50px;
-          font-size: 3.125rem;
+          font-size: 30px;
+          font-size: 1.875rem;
           color: #fff; }
   #pub_header_pc_full > .gnb {
     float: left;
     margin-right: 5%;
     width: 30%;
-    height: 100px;
-    height: 6.25rem; }
+    height: 80px;
+    height: 5rem; }
     #pub_header_pc_full > .gnb > .nav_area {
       width: 100%;
       height: 100%;
@@ -80,22 +80,22 @@
           #pub_header_pc_full > .gnb > .nav_area > ul > li > a {
             display: block;
             width: auto;
-            height: 70px;
-            height: 4.375rem;
-            color: #000033;
-            font-size: 24px;
-            font-size: 1.5rem;
+            height: 50px;
+            height: 3.125rem;
+            color: #fff;
+            font-size: 20px;
+            font-size: 1.25rem;
             text-align: center;
             white-space: nowrap;
             word-break: keep-all; }
             #pub_header_pc_full > .gnb > .nav_area > ul > li > a > i {
               display: block;
               width: 100%;
-              height: 50px;
-              height: 3.125rem;
-              font-size: 50px;
-              font-size: 3.125rem;
-              color: #000033;
+              height: 30px;
+              height: 1.875rem;
+              font-size: 30px;
+              font-size: 1.875rem;
+              color: #fff;
               text-align: center; }
   #pub_header_pc_full > .samseon_btn {
     float: right;
@@ -107,7 +107,7 @@
       width: 100%;
       height: 100%;
       margin: auto;
-      background-color: #000033; }
+      background-color: transparent; }
       #pub_header_pc_full > .samseon_btn > button > i {
         display: block;
         width: auto;
@@ -334,8 +334,8 @@
   width: 100%;
   height: 1000px;
   height: 62.5rem;
-  margin-top: 200px;
-  margin-top: 12.5rem; }
+  padding-top: 100px;
+  padding-top: 6.25rem; }
   #article_pc_full_02 > .fullBox {
     position: relative;
     padding: 50px;
@@ -356,8 +356,7 @@
         width: 100%;
         height: 100%;
         margin: auto;
-        overflow: hidden;
-        box-shadow: 3px 3px 3px #333; }
+        overflow: hidden; }
         #article_pc_full_02 > .fullBox > div > .guide_box > ul {
           position: absolute;
           width: 500%;
@@ -366,47 +365,51 @@
           #article_pc_full_02 > .fullBox > div > .guide_box > ul > li {
             float: left;
             width: 20%;
-            height: 100%; }
+            height: 100%;
+            overflow: hidden; }
             #article_pc_full_02 > .fullBox > div > .guide_box > ul > li > a {
               display: block;
               width: 100%;
-              height: 100%; }
+              height: 100%;
+              border-radius: 0.3rem; }
               #article_pc_full_02 > .fullBox > div > .guide_box > ul > li > a > span {
                 display: block;
-                width: 100%;
-                height: 100%;
+                width: 90%;
+                height: auto;
+                transform: translateY(450%);
                 margin: auto;
-                transform: translateY(80%);
                 font-size: 24px;
                 font-size: 1.5rem;
-                color: #fff;
-                text-shadow: 3px 3px 0 #333;
-                text-align: center; }
+                color: #000033;
+                padding-top: 30px;
+                padding-top: 1.875rem;
+                padding-bottom: 30px;
+                padding-bottom: 1.875rem;
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                border-radius: 0.5rem; }
         #article_pc_full_02 > .fullBox > div > .guide_box > a {
           display: block;
           position: absolute;
-          bottom: 5%;
-          width: 100%;
-          height: 100%;
-          margin: auto; }
+          left: 50%;
+          bottom: 10%;
+          transform: translateX(-50%);
+          width: 200px;
+          width: 12.5rem;
+          height: 100px;
+          height: 6.25rem;
+          background-color: #000033; }
           #article_pc_full_02 > .fullBox > div > .guide_box > a > span {
             display: block;
-            position: absolute;
-            left: 50%;
-            bottom: 5%;
-            transform: translateX(-50%);
-            width: 200px;
-            width: 12.5rem;
-            width: 200px;
-            width: 12.5rem;
-            height: 100px;
-            height: 6.25rem;
+            width: auto;
+            height: auto;
             font-size: 30px;
             font-size: 1.875rem;
-            background-color: #000033;
             color: #fff;
             text-transform: capitalize;
-            text-align: center; }
+            text-align: center;
+            line-height: 100px;
+            line-height: 6.25rem; }
         #article_pc_full_02 > .fullBox > div > .guide_box > .btn_area {
           display: none;
           position: absolute;
@@ -503,8 +506,8 @@
           height: auto;
           text-align: center;
           color: #fff;
-          font-size: 20px;
-          font-size: 1.25rem; }
+          font-size: 18px;
+          font-size: 1.125rem; }
   #pub_footer_pc_full > address {
     margin-top: 20px;
     margin-top: 1.25rem;

@@ -1,7 +1,7 @@
 // article_t_03.js
 (function($){
    // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
    let rel = null;
    $.ajax({
     async:false,
@@ -23,7 +23,7 @@
   let img = [ 'img01.jpeg', 'img02.jpeg', 'img08.jpeg' ];
   console.log(len);
   for(let i=0; i<len; i++ ){
-    let imgUrl = `../img/${folder[i].country}/`;
+    let imgUrl = `./img/${folder[i].country}/`;
     console.log(imgUrl);
     eupLi.eq(i).children('a').css({'backgroundImage':`url(${imgUrl + img[i]})`, 'backgroundSize':'cover', 'backgroundRepeat':'noRepeat', 'backgroundPosition':'50% 50%'});
   }

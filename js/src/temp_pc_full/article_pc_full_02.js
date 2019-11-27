@@ -86,7 +86,7 @@ let btnArea = fullBox.find('.btn_area');
     });
   };
  const otherMoveSlide = function(i){
-   console.log(i);
+   //console.log(i);
    btnArea.find('.next').each(function(i, next){
      $(this).eq(i).not().trigger('click');
    });
@@ -153,6 +153,11 @@ btnArea.children('button').on('click', function(e){
         guide.css({'marginLeft':-100 * eachN[thisWhitch] + '%'});
       }
     });
+});
+
+$(this).children('a').on('mouseenter', function(){
+  let myIndex = $(this).index();
+  console.log(myIndex);
 });
 
 

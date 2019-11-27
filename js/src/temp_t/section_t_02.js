@@ -2,7 +2,7 @@
 
 (function($){
 // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -26,7 +26,7 @@ let folder = [ rel[7], rel[8], rel[5]];
 let img = [ 'img06.jpeg', 'img05.jpeg', 'img05.jpeg '];
 
 for(let i=0; i<len; i++){
-  let imgUrl = `../img/${folder[i].country}/`;
+  let imgUrl = `./img/${folder[i].country}/`;
   console.log(imgUrl+img[i]);
   evenLi.eq(i).children(evenLink).css({'backgroundImage':`url(${imgUrl + img[i]})`, 'backgroundSize':'cover', 'backgroundRepeat':'noRepeat', 'backgroundPosition':'50% 50%', 'border':'2px solid #fff'});
 }

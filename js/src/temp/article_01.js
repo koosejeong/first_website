@@ -2,7 +2,7 @@
 (function($){
 
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   //let imgurl = '../img/';
   let rel = null;
   $.ajax({
@@ -28,7 +28,7 @@
   let counArry = [ rel[14], rel[17], rel[13]];
   let img = 'img01.jpg';
   for(let i=0; i<len; i++){
-    let imgUrl = `../img/${counArry[i].country}/`;
+    let imgUrl = `./img/${counArry[i].country}/`;
     imgBox.eq(i).css({'backgroundImage':`url(${imgUrl + img})`});
   }
 

@@ -4,7 +4,7 @@
 (function($){
 
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -35,7 +35,7 @@
   let counArry = [rel[0], rel[18], rel[5], rel[15]];
   let conArr = [];
   for( let i = 0; i < counArry.length; i++ ){
-    let imgUrl = `../../img/${counArry[i].country}/`;
+    let imgUrl = `./img/${counArry[i].country}/`;
     advTxt.eq(i).text(txt[i]);
     //console.log(counArry[i].country);
     for( let j=0; j < counArry[i].order.length; j++ ){

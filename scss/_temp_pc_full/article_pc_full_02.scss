@@ -1,19 +1,19 @@
 // article_pc_full_02.scss
 $c:5;
-#article_pc_full_02{ width:100%; @include conUnit(height, 1000); @include conUnit(margin-top, 200); 
+#article_pc_full_02{ width:100%; @include conUnit(height, 1000); @include conUnit(padding-top, 100); 
   &>.fullBox{ position:relative; @include conUnit(padding, 50); box-sizing:border-box; width:100%; height:100%;
     &>div{ float:left; margin-right:5%; width:30%; height:80%; background-color: #fff; 
       &:last-of-type{margin-right: 0;}
-      &>.guide_box{ position:relative; @include fullBox; overflow:hidden; box-shadow:3px 3px 3px #333;
+      &>.guide_box{ position:relative; @include fullBox; overflow:hidden; 
         &>ul{ position:absolute; width:100% * $c; height:80%; left:-100%;
-          &>li{ float:left; width:100% / $c; height:100%; 
-            &>a{ display:block; width:100%; height:100%; 
-              &>span{ display:block; @include fullBox; transform:translateY(80%); @include conUnit(font-size, 24); color:#fff; text-shadow:3px 3px 0 #333; text-align:center; } //span
+          &>li{ float:left; width:100% / $c; height:100%; overflow:hidden;
+            &>a{ display:block; width:100%; height:100%; border-radius:0.3rem; 
+              &>span{ display:block; width:90%; height:auto; transform:translateY(450%); margin:auto; @include conUnit(font-size, 24); color:#000033; @include conUnit(padding-top, 30);  @include conUnit(padding-bottom, 30); background-color:rgba(255,255,255,0.5); text-align:center; border-radius:0.5rem; } //span
             } //a
           } //li
         }// ul
-        &>a{ display:block; position:absolute; bottom:5%; @include fullBox; 
-          &>span{ display:block; position:absolute; left:50%; bottom:5%; transform:translateX(-50%); @include conUnit(width, 200); @include conUnit(width, 200); @include conUnit(height, 100); @include conUnit(font-size, 30); background-color:#000033; color:#fff; text-transform:capitalize; text-align:center; }
+        &>a{ display:block; position:absolute; left:50%; bottom:10%; transform:translateX(-50%); @include conUnit(width, 200); @include conUnit(height, 100); background-color:#000033; 
+          &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 30); color:#fff; text-transform:capitalize; text-align:center; @include conUnit(line-height, 100); }
           } //a
         &>.btn_area{ display:none; position:absolute; top:40%; width:100%; height:0; 
         &>.next{ float:right; @include conUnit(width, 50); @include conUnit(height, 50); background-color:transparent; }

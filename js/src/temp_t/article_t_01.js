@@ -3,7 +3,7 @@
 (function($){
 
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -29,7 +29,7 @@
 
 
     for(let i=0; i<liLen; i++){
-      let imgUrl = `../img/${folder[i].country}/`;
+      let imgUrl = `./img/${folder[i].country}/`;
       // console.log(imgUrl);
       focusLi.eq(i).children('a').css({'backgroundImage':`url(${imgUrl}img01.jpg)`});
     }

@@ -2,7 +2,7 @@
 
 (function($){
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -28,7 +28,7 @@
   let folder = [ rel[1], rel[7], rel[9], rel[8]];
   console.log(liLen);
   for(let i=0; i<liLen; i++){
-    let imgUrl = `../img/${folder[i].country}/`;
+    let imgUrl = `./img/${folder[i].country}/`;
     //console.log(imgUrl);
     slideLi.eq(i).css({'backgroundImage':`url(${imgUrl + img[i]}.jpeg)`});
   }

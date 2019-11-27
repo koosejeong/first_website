@@ -2,7 +2,7 @@
 
 (function($){
   // data 불러오기--------------------
-  let url = '../data/pub_header.json';
+  let url = './data/pub_header.json';
   let rel = null;
   $.ajax({
     async:false,

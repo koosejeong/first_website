@@ -2,7 +2,7 @@
 
 (function($){
   // data 불러오기--------------------
-  let url = '../data/country.json';
+  let url = './data/country.json';
   let rel = null;
   $.ajax({
     async:false,
@@ -28,7 +28,7 @@
   let folder = [ rel[7],rel[8],rel[5] ];
   let img = [ 'img06.jpeg','img05.jpeg','img05.jpeg' ];
   for(let i=0; i<evtLi.length; i++){
-    let imgUrl = `../../img/${folder[i].country}/`;
+    let imgUrl = `./img/${folder[i].country}/`;
     //console.log(imgUrl);
     evtLi.eq(i).children('a').css({
        'backgroundImage':`url(${imgUrl + img[i]})`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%','backgroundRepeat':'no-repeat'});

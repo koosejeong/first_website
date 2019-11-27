@@ -3,7 +3,7 @@
 (function($){
 
    // data 불러오기--------------------
-   let url = '../data/country.json';
+   let url = './data/country.json';
    //let imgurl = '../img/';
    let rel = null;
    $.ajax({
