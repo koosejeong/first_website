@@ -1,6 +1,6 @@
 // article_01.scss
 
-#article_01{ position:relative; width:100%; height:auto; 
+#article_01{ position:relative; @include conUnit(margin-top, 50); width:100%; height:auto; 
   &>.art_01_full_box{ width:100%; @include conUnit( min-width, 320); height:auto; 
     &>.art_01_box{ position:relative; @include conUnit( padding, 20); box-sizing:border-box; width:100%; height:40vw; border-bottom:1px solid #333;
       &>.art_01_focus{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:30vw; height:30vw; background-color:#eee; opacity:0.7; border-radius:100%; 

@@ -1,19 +1,12 @@
 // article_02.scss
-
-#article_02{ position:relative; width:100%; @include conUnit( height, 300);
+$count:5; 
+#article_02{ position:relative; @include conUnit(margin-top, 50); width:100%; @include conUnit( height, 300);
   &>.art_02_form_box{ position:absolute; top:0; left:0; margin:auto; width:100%; @include conUnit( min-width, 320); height:100%; background-color: #fff; overflow:hidden;
-    &>span{ position:absolute; top:0; left:5%; margin:auto; width:80%; @include conUnit( height, 47); font-size:32px; color:#fff; }
-    &>ul{ $count:5; 
-      width:100% * $count; height:100%; margin-left:-100%;
-      &>li{ float:left; @include conUnit( padding, 50); box-sizing:border-box; 
-        width:100% / $count; height:100%;
-        &>a{ display:block; width:100%; height:100%; 
-          &>span{ display:block; position:absolute; top:50%; width:auto; height:auto; transform:trnaslateY(50%); /*수직값을 주는 순간 겹치는 이유 무엇?*/ }
-        }
-      &:nth-child(1){ background-image: url('../../img/hongkong/img05.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
-      &:nth-child(2){ background-image: url('../../img/newyork/img05.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
-      &:nth-child(3){ background-image: url('../../img/sanhai/img01.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
-      &:nth-child(4){ background-image: url('../../img/hawai/img02.jpeg'); background-size: cover; background-position:100% 100%; background-repeat: no-repeat;}
+    &>ul{ position:absolute; top:0; left:-100%; width:100% * $count; height:100%; 
+      &>li{ float:left; width:100% / $count; height:100%;
+        &>a{ display:block;  @include conUnit(padding, 50); box-sizing:border-box; @include fullBox; background-size: cover; background-position:100% 100%; background-repeat: no-repeat;
+          &>span{ display:block; width:auto; height:100%; transform:translateY(50%); @include conUnit(font-size, 18); }
+        } //a
       } //li
 
     } //ul 

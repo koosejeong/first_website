@@ -1,0 +1,91 @@
+// sign_up.scss
+@charset "utf-8";
+
+#wrap{ width:100%; height:auto; background-color:#eee;
+  &>h1{ width:100%; @include conUnit(height, 100);  text-align: cneter; 
+    &>a{ display:block; @include conUnit(width, 300); height:100%; background-image: url('../../img/icon/paran_300.png'); background-position:50% 50%; background-size: contain; background-repeat: no-repeat; }
+  } //h1
+  &>#joinBox{ @include conUnit(padding, 30); box-sizing:border-box; margin:auto; width:60%; height:auto; background-color: #fff;
+    &>form{ width:100%; height:auto; 
+      &>.input_area{ width:100%; height:auto; @include conUnit(min-height, 600);  
+        &>ul{ @include conUnit(padding, 10); box-sizing:border-box; width:auto; height:auto;     
+          &>li{ width:80%; @include conUnit(height, 100); margin:auto; @include conUnit(margin-bottom, 10);  
+            &>dl{ width:100%; @include conUnit(height, 50); border:1px solid #777; 
+              &>dt{ float:left; @include conUnit(width, 50); height:100%; border-right:1px solid #777; box-sizing:border-box; 
+                &>label{ display:block; padding:0;  width:100%; height:100%; @include conUnit(font-size, 30); line-height:1.2; text-indent:0; text-align: center; }
+              } //dt
+              &>dd{ float:left; width:calc(100% - 50px); height:100%; 
+                &>input{ width:100%; height:100%; border:0; }
+              } //dd
+            } //dl
+          &>span.narr{ display:none; width:100%; @include conUnit(height, 30); @include conUnit(margin-top, 10); background-color: #fff; color:#f00; }
+          &.error dl{ border-color:#f00; } 
+          &.error .narr{ display:block; }
+          } //li
+        } //ul
+      } //input
+      & .confirm_area{ width:100%; height:auto; @include conUnit(padding, 20); text-align:center;
+        &>input[type="submit"]{ width:70%; @include conUnit(height, 50); margin:auto; border:0; background-color:#000033; border-radius:3px; box-shadow:0 -2px 0 rgba(0,0,0,0.5); color:#fff; font-size:1.2rem; font-weight: bold; }
+        & p{ @include conUnit(margin-top, 10); color:#333; 
+          &>strong+em{ font-weight:bold; font-style:normal; }
+          &>button{ padding:0; background-color: transparent; text-decoration:underline; color:inherit; font-size:inherit; }
+        } //p
+      } //confirm_area
+    } //joinBox
+  } //form
+    &>.compony_infor{ width:60%; height:auto; margin:auto; 
+      &>p{ width:auto; height:auto; text-align:center; font-style:normal; 
+        &>.part_01{ text-transform:capitalize; }
+        &>.part_02{ text-transform:uppercase; }
+      } //p
+    } //compony_infor
+} //wrap
+
+@media screen and (min-width:320px) and (max-width:480px){
+  #wrap{ width:100%; height:auto; background-color:#eee;
+    &>h1{ @include conUnit(margin-bottom, 30); }
+    &>#joinBox{ padding:0; width:100%; 
+      &>form{ 
+        &>.input_area{ background-color:#eee;
+          &>ul{ padding:0; background-color:#eee;
+            &>li{ width:100%; 
+              &>dl{ width:90%; margin:auto;
+                &>dt{ }
+                &>dd{ width:calc(100% - 50px);
+                  &>input{ width:100%; }
+                }
+              }
+            }
+          } //ul 
+        } //fieldset
+        &>.confirm_area{ padding:0; background-color:#eee; }
+      } //form
+    } //joinBox
+    &>.compony_infor{ @include conUnit(padding, 20); text-align:center;}
+  } //wrap
+}
+@media screen and (min-width:481px) and (max-width:768px){
+  #wrap{ width:100%; height:auto; background-color:#eee;
+    &>h1{ @include conUnit(margin-bottom, 30); }
+    &>#joinBox{ padding:0; width:100%; 
+      &>form{ 
+        &>.input_area{ background-color:#eee;
+          &>ul{ padding:0; background-color:#eee;
+            &>li{ width:100%; 
+              &>dl{ width:70%; margin:auto;
+                &>dt{ }
+                &>dd{ width:calc(100% - 50px);
+                  &>input{ width:100%; }
+                }
+              }
+            }
+          } //ul 
+        } //fieldset
+        &>.confirm_area{ padding:0; background-color:#eee; }
+      } //form
+    } //joinBox
+    &>.compony_infor{ @include conUnit(padding, 20); text-align:center;}
+  } //wrap
+}
+  
+  

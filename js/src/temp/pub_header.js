@@ -14,6 +14,7 @@
    });
   //  console.log(rel);
    // -------------------------------
+  const win = $(window);
   const pubHead = $('#pub_header');
   const menuArea = pubHead.find('.menu_area');
   const samseonBar = pubHead.children('.samseon_btn');
@@ -23,6 +24,18 @@
   const closeBtn = anotheArea.children('.close_btn');
   const menuUl = anotheArea.children('ul');
   const menuLi = menuUl.children('li');
+  const etcArea = pubHead.children('.etc_area');
+
+  
+  win.on('mousewheel', function(){
+    let winLoc = $(this).scrollTop();
+    //console.log(winLoc);
+    if(winLoc > 200 ){
+      etcArea.css({display:'none'});
+    } else if( winLoc <= 0){
+      etcArea.css({display:'block'});
+    }
+  });
 
   btnArea.on('click', function(e){
     e.preventDefault();

@@ -1,7 +1,7 @@
 // article_pc_03.scss
 #article_pc_03{ @include conUnit(margin-top, 100); width:100%; @include conUnit(max-width, 1280); height:auto; background-color: #eee;
-  &>.fullBox{ position:relative; @include fullBox; @include conUnit(min-height, 800); opacity:1;
-    &>p{ margin:auto; width:90%; @include conUnit(height, 97); border-bottom:3px solid #000033; 
+  &>.fullBox{ position:relative; @include fullBox; @include conUnit(min-height, 800); 
+    &>p{ margin:auto; width:90%; @include conUnit(height, 97);  
       &>a{ display:block; position:absolute; top:5%; right:5%; @include conUnit(width, 100); @include conUnit(height, 50); background-color:#000033; 
         &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 30); text-align:center; @include conUnit(line-height, 50); color:#fff; }
       } //a

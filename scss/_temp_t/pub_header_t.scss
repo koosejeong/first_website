@@ -1,12 +1,15 @@
 @charset "utf-8";
 
 $c:6;
-#pub_header_t{ position:fixed; top:0; left:0; z-index:1000; @include conUnit( padding, 20); box-sizing:border-box; width:100%; height:auto; @include conUnit( min-width, 481); @include conUnit( max-width, 768); background-color:rgba(0,0,0,0.3);  border-bottom:3px solid #000033; clear:both;
-  &>h1{ float:left; margin-right:3%; width:20%; height:auto; @include conUnit( min-height, 50); background-image: url('../../img/icon/logo.png'); background-size:contain; background-position:50% 50%; background-repeat: no-repeat; }
-  &>#form_area{ float:left; margin-right:3%; width:30%; height:100%; background-color: #fff; 
-    &>form{ @include fullBox;
-        & #text-area{ float:left; width:70%; height:100%; @include conUnit( min-height, 50); background-color: #ccc; }
-        & .search-btn{ float:right; width:30%; height:100%; @include conUnit( min-height, 50); background-color:#000033; 
+#pub_header_t{ position:fixed; top:0; left:0; z-index:1000; @include conUnit( padding, 20); box-sizing:border-box; width:100%; height:auto; @include conUnit( min-width, 481); @include conUnit( max-width, 768); background-color:rgba(0,0,0,0.5); 
+  &:after{ content:" "; width:100%; height:100; clear:both; }
+  &>h1{ float:left; margin-right:3%; width:20%; @include conUnit(height, 50); 
+    &>a{ display:block; @include fullBox; background-image: url('../../img/icon/Re_Re_paran_300.png'); background-size:contain; background-position:50% 50%; background-repeat: no-repeat; }
+  }
+    &>#form_area{ float:left; margin-right:3%; width:30%;  
+    &>form{ @include fullBox; border:0; border-bottom:3px solid #000033;
+        & #text-area{ float:left; width:70%; height:auto; @include conUnit( min-height, 50); border:0; background-color:transparent; }
+        & .search-btn{ float:right; width:30%; height:auto; @include conUnit( min-height, 50); background-color:transparent; 
           &>i{ @include fullBox; @include conUnit(font-size, 20); color:#fff; text-align:center; }
         } 
     } //form
@@ -23,7 +26,7 @@ $c:6;
   } //menu_area
   &>#btn_area{ float:right; @include conUnit(padding, 20); box-sizing:border-box; margin-right:5%; width:5%; height:auto;  
     &>button{ @include fullBox; background-color:transparent;
-      &>i{ width:auto; height:auto; @include conUnit(font-size, 40); background-color:#000033; transform:translateY(-50%); }
+      &>i{ width:auto; height:auto; @include conUnit(font-size, 40); transform:translateY(-50%); }
     }
     &>.anothe_area{ display:none; position:absolute; top:0; left:0; z-index:1000; width:100%; @include conUnit( max-width, 768); height:auto; @include conUnit( min-height, 400); background-color:#fff;
       &>ul{ width:100%; height:auto; 

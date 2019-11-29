@@ -1,10 +1,10 @@
 // article_03.scss
 
 $count:5;
-#article_03{ position:relative; width:100%; @include conUnit( min-width, 320); height:auto; 
+#article_03{ position:relative; @include conUnit(margin-top, 50); width:100%; @include conUnit( min-width, 320); height:auto; 
   &>.full_box{ width:100%; @include conUnit( height, 300); background-size: cover; background-position:50% 50%; background-repeat: no-repeat; overflow:hidden; 
     &:before{ display:block; content:" "; position:absolute; top:0; left:0; @include fullBox; background-color: #eee; opacity:0.5; }
-    &>.guide_box{ position:absolute; top:0; left:0; width:100%; height:100%; 
+    &>.guide_box{ width:100%; height:100%; 
       &>ul{ transform:translateX(-100% / $count); width:100% * $count; height:100%; 
         &>li{ float:left; width:100% / $count; height:100%;  @include conUnit( padding, 50); box-sizing:border-box;  
           &>a{ display:block; width:100%; height:100%; background-size: cover; background-position:50% 50%; background-repeat: no-repeat; 

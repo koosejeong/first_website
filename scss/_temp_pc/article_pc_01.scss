@@ -14,7 +14,7 @@ $c:3;
     } //ul
     &>.respon_box{ display:none; position:absolute; top:0; left:0; z-index:1; @include fullBox; background-position:50% 50%; background-size:cover; background-repeat: no-repeat; opacity:0; }
     &>.respon_box.action{ z-index:3; background-color:rgba(200,200,200,0.5); }
-    &>p{ position:absolute; left:10%; right:10%; bottom:5%; z-index:10; width:80%; @include conUnit(height, 47); border-bottom:3px solid #000033; 
+    &>p{ position:absolute; left:10%; right:10%; bottom:5%; z-index:10; width:80%; @include conUnit(height, 47); 
       &>a{ display:block; position:absolute; right:0; bottom:5%; @include conUnit(width, 100); @include conUnit(height, 50); background-color:#000033; color:#fff; font-style:bold; text-align:center; @include conUnit(font-size, 24); @include conUnit(line-height, 50); }
     } //p
   } //fullBox

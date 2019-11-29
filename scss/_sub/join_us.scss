@@ -1,0 +1,72 @@
+
+#wrap{ width:100%; height:auto; @include conUnit(min-height, 1200); background-color: #eee;
+  &>h1{ @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:20%;  
+    &>a{ display:block; margin:auto; @include conUnit(width, 200); @include conUnit(height, 100); background-image: url('../../img/icon/paran_300.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
+  } //h1
+  &>.join_area{ @include conUnit(padding, 50); box-sizing:border-box; width:100%; height:auto; @include conUnit(min-height, 900); margin:auto;
+    &>form{ width:60%; height:auto; @include conUnit(min-height, 900); margin:auto; background-color: #fff; 
+      &>fieldset{ position:relative; @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:auto; 
+        &>.check{ width:100%; height:auto; 
+          &>input{ position:absolute; z-index:-1; left:-9999rem; width:0; height:0; overflow:hidden; border:0; 
+            &>i{ font-size:1.4rem; color:#777; cursor:pointer; }
+          }
+          &>p{ width:100%; @include conUnit(height, 50); @include conUnit(font-size, 16); color:#333; 
+            & em{ font-style:normal; }
+          }
+        & dl{ width:100%; height:auto; 
+          &>dt{ width:100%; height:auto; @include conUnit(font-size, 24); color:#333; font-weight:bold; }
+          &>dd{ width:100%; @include conUnit(height, 200); @include conUnit(margin-top, 10); border:2px solid #eee; overflow-x:auto; }
+          } //dd
+
+        & .rq_none_box{ display:none; position:absolute; bottom:-50%; left:50%; z-index:1000; transform:translateX(-50%); @include conUnit(width, 300); @include conUnit(height, 200); background-color:#fff; border:1px solid #000033;
+          &>span{ display:block; width:auto; height:auto; @include conUnit(font-size, 18); text-align:center; @include conUnit(line-height, 200); color:#333; } 
+          &>button{ position:absolute; right:0; bottom:0; @include conUnit(width, 50); @include conUnit(height, 20); background-color:#000033; color:#fff; }   
+        }
+      } //check
+      &:nth-of-type(2)>h4{ @include conUnit(margin-bottom, 20); @include conUnit(font-size, 24); font-weight:bold; }
+      &:nth-of-type(2)>p{ border:2px solid #eee; }
+      &:nth-of-type(3) .check dl>dd{ @include conUnit(margin-bottom, 30); }
+      &:nth-of-type(4){ margin:auto; width:100%; @include conUnit(height, 100); text-align: center; }
+        &>input{ @include conUnit(width, 100); @include conUnit(height, 50); border:0; background-color: #000033; color:#fff; }
+
+      /* 전체 동의 체크 시-------------------------------------------------- */
+      & .all_check>input:focus+p i{ color:#000; }
+      & .all_check>input:checked+p i{ color:#08a600; }
+      
+      /* 각각 동의 체크 시-------------------------------------------------- */
+      & .check input:focus+p i{ color:#f00; } 
+      & .check input:checked+p i{ color:#08a600; }
+
+      } //fieldset
+    } //form 
+  } //join_area
+} //wrap
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  #wrap{ 
+    &>.join_area{ padding:0; width:100%; height:auto; 
+      &>form{ padding:0; margin:auto; width:100%; height:80%; 
+        &>fieldset{ padding:0; width:100%; height:auto; 
+         & p:first-of-type{ height:auto; @include conUnit(margin-bottom, 30); }
+         & dl{ width:100%; height:auto;  
+          &>dt{ @include conUnit(font-size, 16);  }
+          &>dd{ @include conUnit(height, 200);}
+          } //dl
+        &:nth-of-type(2)>h4{ @include conUnit(margin-top, 20); @include conUnit(font-size, 18); }
+        &:nth-of-type(2)>p{ @include conUnit(height, 100); overflow-x:auto; }
+        } //fieldset
+      }
+    }
+  }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+  #wrap{
+    &>.join_area{ width:100%; height:auto;
+      &>form{ @include conUnit(padding, 10); box-sizing:border-box; width:100%; height:auto;
+        &>fieldset{ width:100%; height:auto; 
+        & p:first-of-type{ @include conUnit(margin-bottom, 50); }
+        }
+      }
+    }
+  }
+}

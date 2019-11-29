@@ -1,0 +1,12 @@
+#wrap {
+  width: 100%;
+  height: 100%; }
+  #wrap > .heading_area {
+    width: 100%;
+    height: 10%;
+    background-color: #acf; }
+    #wrap > .heading_area > h1 {
+      float: left;
+      width: 30%;
+      height: 80%;
+      background-color: #fff; }

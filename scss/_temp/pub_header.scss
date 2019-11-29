@@ -1,11 +1,16 @@
 // m_pub_header.scss
 
-#pub_header{ position:fixed; top:0; left:0; z-index:1000; @include conUnit( padding, 20); box-sizing:border-box; width:100%; @include conUnit( min-width, 320); height:auto; @include conUnit( min-height, 100); background-color: rgba(50, 50, 200, 0.5); clear:both;
-  &>h1{ float:left; width:30%;  @include conUnit( height, 64); background-image: url('../../img/icon/logo.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat; }
-  &>.form_area{ float:left; @include conUnit( padding, 10); box-sizing:border-box; width:50%; @include conUnit( height, 64); @include conUnit( margin-left, 5);  
-    &>form{ @include fullBox;
-      & input{ float:left; width:70%; @include conUnit( height, 50); }
-      & button{ float:right; width:30%; @include conUnit( height, 50); background-image: url('../../img/icon/search-icon.png'); background-position:50% 50%; background-size: cover; background-repeat: no-repeat; }
+#pub_header{ position:fixed; top:0; left:0; z-index:1000; @include conUnit( padding, 20); box-sizing:border-box; width:100%; @include conUnit( min-width, 320); height:auto; @include conUnit( min-height, 100); background-color:#000033; 
+  &:after{ content:" "; display:block; width:100%; height:100%; clear:both; }
+  &>h1{ float:left; width:30%; @include conUnit( height, 50); 
+    &>a{ display:block; @include fullBox; background-image: url('../../img/icon/Re_Re_paran_300.png'); background-size: contain; background-position:50% 50%; background-repeat: no-repeat;} 
+  }
+  &>.form_area{ float:left; @include conUnit( padding, 10); box-sizing:border-box; width:50%; @include conUnit( height, 50); @include conUnit( margin-left, 5);  
+    &>form{ @include fullBox; 
+      & input{ float:left; width:70%; @include conUnit( height, 50); background-color:transparent; border:0; border-bottom:3px solid #fff; }
+      & button{ float:right; width:30%; @include conUnit( height, 50); background-color:transparent; border:0; border-bottom:3px solid #fff; 
+        &>i{ display:block; width:auto; height:auto; @include conUnit(font-size, 30); color:#fff; }
+      }
     } //form 
   } //form_area
   &>.samseon_btn{ float:right; @include conUnit( padding, 10); box-sizing:border-box;  @include conUnit( width, 50); @include conUnit( height, 50); background-color:transparent;
@@ -31,4 +36,13 @@
       } //ul
     } //anothe_area
   } //samseon_btn
+  &>.etc_area{ position:fixed; top:20%; width:50%; @include conUnit(height, 50); 
+    &>ul{ @include fullBox; background-color:transparent;
+      &>li{ float:left; width:30%; height:100%; 
+        &>a{ display:block; @include fullBox; color:#fff; @include conUnit(font-size, 16); text-align:center; white-space: nowrap; word-break: keep-all;
+          &>i{ display:block; width:100%; @include conUnit(height, 30);  @include conUnit(font-size, 30); color:#000033; text-align:center; }
+        } //a
+      } //li
+    } //ul
+  } //etc_area
 } //pub_header

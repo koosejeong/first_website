@@ -49,7 +49,7 @@
  const goSlide = function(){
    go = setInterval(function(){
      moveSlide();
-   }, timed * 5);
+   }, timed * 10);
  }
 
  const stopSlide = function(){

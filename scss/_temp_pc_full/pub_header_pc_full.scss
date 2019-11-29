@@ -1,10 +1,12 @@
 // pub_haeder_pc_full.scss
 $c:3;
 $count:6;
-#pub_header_pc_full{ position:fixed; top:0; left:0; z-index:1000; @include conUnit(padding, 10); box-sizing:border-box; width:100%; height:auto; background-color:rgba(25,25,70,0.8);
-  &>h1{ float:left; margin-right:5%; width:15%; @include conUnit(height, 50); background-color:#eee; }
+#pub_header_pc_full{ position:fixed; top:0; left:0; z-index:1000; @include conUnit(padding, 10); box-sizing:border-box; width:100%; height:auto; background-color:#000033;
+  &>h1{ float:left; margin-right:5%; width:15%; @include conUnit(height, 50); 
+    &>a{ display:block; @include fullBox; background-image: url('../../img/icon/Re_Re_paran_300.png'); background-size:contain; background-position:50% 50%; background-repeat: no-repeat; }
+    }
   &>.form_area{ float:left; margin-right:5%; width:30%; @include conUnit(height, 80); 
-    &>form{ @include fullBox; @include conUnit(padding, 10); box-sizing:border-box; border-bottom:5px solid rgb(153, 190, 253);;
+    &>form{ @include fullBox; @include conUnit(padding, 10); box-sizing:border-box; border-bottom:5px solid #fff;;
       & input[type="text"]{ float:left; width:80%; @include conUnit(height, 70); background-color:transparent; border:0;  }
       & button[type="button"]{ float:right; width:20%; @include conUnit(height, 70);  background-color:transparent; 
         &>i{ display:block; width:auto; height:auto; @include conUnit(font-size, 30); color:#fff; }

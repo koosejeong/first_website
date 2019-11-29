@@ -1,6 +1,6 @@
 // section_02.scss
 $i:3;
-#section_02{ position:relative; width:100%; @include conUnit( min-width, 320); height:50vw; 
+#section_02{ position:relative; @include conUnit(margin-top, 50); width:100%; @include conUnit( min-width, 320); height:50vw; 
   &>.event_area{ padding:12.5vw; box-sizing:border-box; width:100%; height:100%; background-color:#50f; 
     &>ul{ @include fullBox; background-color:inherit;
       &>li{ float:left; width:25vw; height:25vw; @include conUnit( padding, 2); box-sizing:border-box; 

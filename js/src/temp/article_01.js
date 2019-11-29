@@ -25,7 +25,7 @@
   const focus = fullBox.find('.focus');
 
   let len = imgBox.length;
-  let counArry = [ rel[14], rel[17], rel[13]];
+  let counArry = [ rel[14],  rel[13], rel[17] ];
   let img = 'img01.jpg';
   for(let i=0; i<len; i++){
     let imgUrl = `./img/${counArry[i].country}/`;

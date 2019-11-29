@@ -3,7 +3,7 @@
 $c:3;
 $c2:4;
 #pub_footer{ width:100%; @include conUnit( min-width, 320); height:auto; background-color: #fff;
-  &>.icon_area{ @include conUnit( padding, 10); box-sizing:border-box; width:100%; @include conUnit( height, 150); border:1px solid #333; 
+  &>.icon_area{ @include conUnit( padding, 10); box-sizing:border-box; width:100%; @include conUnit( height, 150); 
     &>ul:first-child{ width:100%; height:50%; @include conUnit( padding, 5); box-sizing:border-box;
       &>li{ position:relative; float:left; width:20%; height:100%; margin-right:10%;
         &>a{ display:block; @include fullBox; color:#333; @include conUnit(font-size, 14); text-align: center; font-weight:bold;
@@ -32,7 +32,7 @@ $c2:4;
       } //li
     } //ul
   }
-  &>address{ @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:auto; font-style:normal;  
-    &>span{ display:block; width:80%; height:auto; @include conUnit( font-size, 14); word-break:break-all; }
+  &>address{ @include conUnit(padding, 20); box-sizing:border-box; width:100%; height:auto; font-style:normal; background-color:#000033; 
+    &>span{ display:block; width:80%; height:auto; @include conUnit( font-size, 14); word-break:break-all; color:#fff; }
   }
 }

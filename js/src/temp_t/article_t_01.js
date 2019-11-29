@@ -25,7 +25,7 @@
   const moreLink = more.children('a');
 
   let liLen = focusLi.length;
-  let folder = [ rel[14], rel[17], rel[13] ];
+  let folder = [ rel[14], rel[13], rel[17]  ];
 
 
     for(let i=0; i<liLen; i++){
@@ -33,7 +33,7 @@
       // console.log(imgUrl);
       focusLi.eq(i).children('a').css({'backgroundImage':`url(${imgUrl}img01.jpg)`});
     }
-
+ 
 
     focusLink.on('click', function(e){
       e.preventDefault();

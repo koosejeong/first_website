@@ -68,8 +68,8 @@
      } // myStatus if
    });
    
-   let folder = [ rel[14], rel[17], rel[13] ];
-   let txt = [ '떠나고 싶은 곳, 마닐라', '가고 싶은 곳, 발리', '요즘 대세, 코타키나발루' ];
+   let folder = [ rel[14], rel[13] , rel[17] ];
+   let txt = [ '떠나고 싶은 곳, 마닐라', '요즘 대세, 코타키나발루', '가고 싶은 곳, 발리' ];
    for(let i=0; i<showLi.length; i++){
      let url = `./img/${folder[i].country}/`;
     showLi.eq(i).children('a').css({'backgroundImage':`url(${url}img01.jpg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});

@@ -18,7 +18,7 @@
   const focusLink = focusLi.children('a');
   const rsBox = fullBox.children('.respon_box');
 
-  let folder = [ rel[14], rel[17], rel[13] ];
+  let folder = [ rel[14],  rel[13], rel[17] ];
   let img = 'img01.jpg';
   for(let i=0; i<focusLi.length; i++){
     let url = folder[i].country;
