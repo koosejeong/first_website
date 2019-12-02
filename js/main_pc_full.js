@@ -39,6 +39,14 @@
     return jsLink('article_pc_full_02');
   });
 
+  // 2st section area==================
+  wrap.append('<section id="section_pc_full_02" class="clearfix scroll"></section>');
+
+  const secPcFull02 = $('#section_pc_full_02');
+  secPcFull02.load('./html/temp_pc_full/section_pc_full_02.html', () => {
+    return jsLink('section_pc_full_02');
+  });
+
   // footer area=======================
   wrap.append('<footer id="pub_footer_pc_full" class="clearfix scroll"></footer>');
 

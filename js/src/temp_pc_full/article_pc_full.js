@@ -79,7 +79,7 @@
      let myThis = $(this).index();
      let url = `./img/${folder[myThis].country}/`;
      rsBox.css({'display':'block'});
-     fullBox.css({'backgroundImage':`url(${url}img01.jpg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
+     fullBox.css({'backgroundImage':`url(${url}img02.jpg)`, 'backgroundSize':'cover', 'backgroundPosition':'50% 50%', 'backgroundRepeat':'no-repeat'});
 
      $(this).closest(fullBox).find(txtArea).text(txt[myThis]);
    });
