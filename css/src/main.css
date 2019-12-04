@@ -164,7 +164,8 @@
                 color: #333; }
   #pub_header > .etc_area {
     position: fixed;
-    top: 20%;
+    top: 105px;
+    top: 6.5625rem;
     width: 50%;
     height: 50px;
     height: 3.125rem; }

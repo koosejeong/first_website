@@ -36,7 +36,7 @@
       } //ul
     } //anothe_area
   } //samseon_btn
-  &>.etc_area{ position:fixed; top:20%; width:50%; @include conUnit(height, 50); 
+  &>.etc_area{ position:fixed; @include conUnit(top, 105); width:50%; @include conUnit(height, 50); 
     &>ul{ @include fullBox; background-color:transparent;
       &>li{ float:left; width:30%; height:100%; 
         &>a{ display:block; @include fullBox; color:#fff; @include conUnit(font-size, 16); text-align:center; white-space: nowrap; word-break: keep-all;
