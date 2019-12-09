@@ -12,7 +12,9 @@
           &>li{ width:80%; @include conUnit(height, 100); margin:auto; @include conUnit(margin-bottom, 10);  
             &>dl{ width:100%; @include conUnit(height, 50); border:1px solid #777; 
               &>dt{ float:left; @include conUnit(width, 50); height:100%; border-right:1px solid #777; box-sizing:border-box; 
-                &>label{ display:block; padding:0;  width:100%; height:100%; @include conUnit(font-size, 30); line-height:1.2; text-indent:0; text-align: center; }
+                &>label{ display:block; padding:0;  width:100%; height:100%; @include conUnit(font-size, 30); line-height:1.2; text-indent:0; text-align: center; 
+                  &>i{ @include conUnit(line-height, 50); @include conUnit(font-size, 36); }
+                }
               } //dt
               &>dd{ float:left; width:calc(100% - 50px); height:100%; 
                 &>input{ width:100%; height:100%; border:0; }
