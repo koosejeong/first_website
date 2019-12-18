@@ -38,7 +38,7 @@
     focusLink.on('click', function(e){
       e.preventDefault();
       let thisi = $(this).parent('li').index();
-      let imgUrl = `../img/${folder[thisi].country}/`;
+      let imgUrl = `./img/${folder[thisi].country}/`;
       //console.log(imgUrl);
       rsBox.css({'display':'block','backgroundImage':`url(${imgUrl}img01.jpg)`, 'opacity':'0.7', 'backgroundColor':'rgba(200,200,200,0.5)'});
       rsBox.addClass('action');
